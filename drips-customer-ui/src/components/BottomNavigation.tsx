@@ -18,8 +18,8 @@ const BottomNavigation = () => {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 pb-safe">
-      <div className="grid grid-cols-3 h-16">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 pb-safe z-50">
+      <div className="grid grid-cols-3 h-16 max-w-md mx-auto px-4">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = path === item.path;

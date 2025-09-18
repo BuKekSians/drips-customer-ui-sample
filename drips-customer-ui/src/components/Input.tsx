@@ -13,7 +13,7 @@ const Input = ({ label, error, ...props }: InputProps) => {
       </label>
       <input
         {...props}
-        className={`input-field ${error ? 'border-red-500' : ''} ${props.className || ''}`}
+        className={`w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-drips-gold text-base appearance-none bg-white ${error ? 'border-red-500' : 'border-gray-300'} ${props.className || ''}`}
       />
       {error && (
         <p className="mt-1 text-red-500 text-xs">{error}</p>
