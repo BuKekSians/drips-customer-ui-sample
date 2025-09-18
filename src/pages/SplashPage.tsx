@@ -13,15 +13,14 @@ const SplashPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-drips-black p-6">
-      {/* Temporary Logo */}
+      {/* Logo */}
       <div className={`transition-opacity duration-1000 ${showContent ? 'opacity-100' : 'opacity-0'}`}>
-        <div className="w-32 h-32 mb-8 relative">
-          <div className="absolute inset-0 bg-drips-gold rounded-full flex items-center justify-center">
-            <span className="text-drips-black text-2xl font-bold">DRIPS</span>
-          </div>
-          <div className="absolute -bottom-2 w-full text-center">
-            <span className="text-drips-gold text-sm font-medium">INDONESIA</span>
-          </div>
+        <div className="w-48 h-48 mb-8 relative">
+          <img 
+            src="/drips_logo_pure.png" 
+            alt="Drips Logo" 
+            className="w-full h-full object-contain"
+          />
         </div>
       </div>
 

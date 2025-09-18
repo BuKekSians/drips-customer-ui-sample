@@ -87,8 +87,16 @@ const BookingPage = () => {
                 }`}
               >
                 <div className="flex items-start">
-                  <div className="w-20 h-20 bg-gray-200 rounded-lg mr-4">
-                    {/* Placeholder for package image */}
+                  <div className={`w-20 h-20 rounded-lg mr-4 flex items-center justify-center ${
+                    pkg.id === 'basic' ? 'bg-drips-black' : 
+                    pkg.id === 'premium' ? 'bg-drips-gold' : 
+                    'bg-pink-500'
+                  }`}>
+                    <img 
+                      src="/drips_logo_pure.png"
+                      alt={`${pkg.name} Package`}
+                      className="w-16 h-16 object-contain"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-drips-black">{pkg.name}</h3>
