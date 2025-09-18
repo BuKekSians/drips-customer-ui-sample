@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://skk-karate-kuningan.vercel.app/sitemap.xml
